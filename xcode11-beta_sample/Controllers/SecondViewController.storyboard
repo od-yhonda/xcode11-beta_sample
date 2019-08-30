@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lYs-vU-OSA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="cfJ-Ud-H1r">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="lYs-vU-OSA" customClass="SecondViewController" customModule="xcode11_beta_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6g-l5-9rZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecondViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-Mx-9Xv">
+                                <rect key="frame" x="121.5" y="437.5" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-bU-ZHX">
+                                <rect key="frame" x="187.5" y="508.5" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="tapButton" destination="lYs-vU-OSA" eventType="touchUpInside" id="OTS-4q-gOM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V9u-Mx-9Xv" firstAttribute="centerY" secondItem="h6g-l5-9rZ" secondAttribute="centerY" id="1YE-tr-chk"/>
+                            <constraint firstItem="vvN-bU-ZHX" firstAttribute="centerX" secondItem="h6g-l5-9rZ" secondAttribute="centerX" id="6fn-3w-Ppg"/>
+                            <constraint firstItem="V9u-Mx-9Xv" firstAttribute="centerX" secondItem="h6g-l5-9rZ" secondAttribute="centerX" id="DB0-Z7-c9p"/>
+                            <constraint firstItem="vvN-bU-ZHX" firstAttribute="top" secondItem="V9u-Mx-9Xv" secondAttribute="bottom" constant="50" id="JuK-Hs-Fsi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0Q-Yb-lqA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEu-ET-ps2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="71"/>
+        </scene>
+    </scenes>
+</document>
